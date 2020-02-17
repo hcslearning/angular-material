@@ -1,0 +1,22 @@
+<div style="background-color: black; color: white;">
+    Hola mundo!
+
+    <br /><br />
+
+    <mat-slider min="1" max="100" step="1" value="1"></mat-slider>
+
+    <br /><br />
+
+    <mat-slide-toggle class="example-margin">
+        Slide me!
+    </mat-slide-toggle>
+
+    <br /><br />
+
+    <input matInput [matDatepicker]="picker">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+
+
+    <router-outlet></router-outlet>
+</div>
